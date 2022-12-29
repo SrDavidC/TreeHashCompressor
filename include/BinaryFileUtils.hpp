@@ -11,7 +11,16 @@
 #include <string>
 #include <vector>
 
+/**
+ * @brief Binary file utils namespace
+ * 
+ */
 namespace BinaryFileUtils {
+  /**
+   * @brief - Write any BINARY.
+   * @param - Destination file name and file type.
+   * @return - Returns true if file was written successfully.
+   */
   bool writeBinaryFile(std::string fileName, std::string fileData ) {
     std::ofstream out_stream(fileName, std::ios::binary );
     bool writeStatus = false; 
@@ -27,9 +36,9 @@ namespace BinaryFileUtils {
   }
 
   /**
-   * @description - Read any ASCII,BINARY or HEX file.
+   * @brief - Read any BINARY.
    * @param - Source file name and file type.
-   * @return - Returns data in tuple format,use std::get<TUPLE_ID>(TUPLE_OBJ) to get data.
+   * @return - Returns data in a buffer of uint8_t to get data for the compressor process.
    */
   std::vector<uint8_t> readBinaryFile(std::string fileName) {
     std::ifstream bin_file(fileName, std::ios::binary);
