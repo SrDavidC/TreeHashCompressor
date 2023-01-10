@@ -1,0 +1,24 @@
+### VisualStudioCode ### 
+**/.vscode/
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+**/.history/.vscode/
+**/.history
+
+# Ignore all bin files.
+**/bin/
+./bin
+# Ignore all .o files
+**/build/
+./build/
+# Ignore docs directory.
+**/doc/
+# Ignore all null.d files
+**/null.d
+#Ignore all log file
+**/*.log

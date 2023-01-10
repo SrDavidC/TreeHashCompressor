@@ -1,5 +1,4 @@
 #include "../include/App.hpp"
-#include "../include/App.hpp"
 
 App::App() {
   // Constructor
